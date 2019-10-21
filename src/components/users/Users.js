@@ -5,7 +5,8 @@ import GithubContext from '../../context/github/githubContext';
 
 const Users = () => {
   const githubContext = useContext(GithubContext);
-  const { users, loading } = githubContext;
+
+  const { loading, users } = githubContext;
 
   if (loading) {
     return <Spinner />;
